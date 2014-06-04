@@ -694,6 +694,16 @@
     "}}}
     call dein#add('nosami/Omnisharp', {'on_ft':['cs']})
   endif "}}}
+
+  " my own
+  NeoBundle 'tommcdo/vim-exchange'
+  NeoBundle 'rhysd/clever-f.vim'
+  NeoBundle 'morhetz/gruvbox'
+  NeoBundle 'ryanoasis/vim-devicons'
+  NeoBundleLazy 'sheerun/vim-polyglot', {'autoload':{'filetypes':['csv', 'slim']}}
+  NeoBundleLazy 'dag/vim-fish', {'autoload':{'filetypes':['fish']}}
+
+  nnoremap <leader>nbu :Unite neobundle/update -vertical -no-start-insert<cr>
 "}}}
 
 " mappings {{{
