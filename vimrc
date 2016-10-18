@@ -696,12 +696,12 @@
   endif "}}}
 
   " my own
-  NeoBundle 'tommcdo/vim-exchange'
-  NeoBundle 'rhysd/clever-f.vim'
-  NeoBundle 'morhetz/gruvbox'
-  NeoBundle 'ryanoasis/vim-devicons'
-  NeoBundleLazy 'sheerun/vim-polyglot', {'autoload':{'filetypes':['csv', 'slim']}}
-  NeoBundleLazy 'dag/vim-fish', {'autoload':{'filetypes':['fish']}}
+  call dein#add('tommcdo/vim-exchange')
+  call dein#add('rhysd/clever-f.vim')
+  call dein#add('morhetz/gruvbox')
+  call dein#add('ryanoasis/vim-devicons', {'on_ft':['less']})
+  call dein#add('sheerun/vim-polyglot', {'on_ft':['csv, slim']})
+  call dein#add('dag/vim-fish', {'on_ft':['fish']})
 
   nnoremap <leader>nbu :Unite neobundle/update -vertical -no-start-insert<cr>
 "}}}
